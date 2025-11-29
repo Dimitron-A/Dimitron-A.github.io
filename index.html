@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIMITRON - Retro Portfolio Terminal</title>
+    <link rel="shortcut icon" type="image/jpg" href="fav ico/favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+    
+    <div class="container">
+        <header class="terminal-header">
+            <div class="header-text">
+                <pre class="ascii-art" id="ascii-logo"></pre>
+                <p class="blink">SYSTEM READY_</p>
+            </div>
+        </header>
+
+        <nav class="terminal-nav">
+            <button class="nav-btn active" data-section="about">[ ABOUT.EXE ]</button>
+            <button class="nav-btn" data-section="skills">[ SKILLS.DAT ]</button>
+            <button class="nav-btn" data-section="projects">[ PROJECTS.SYS ]</button>
+            <button class="nav-btn" data-section="contact">[ CONTACT.COM ]</button>
+        </nav>
+
+        <main class="terminal-content">
+            <section id="about" class="content-section active">
+                <div class="typewriter-text">
+                    <h2>&gt; LOADING PROFILE...</h2>
+                    <div class="typed-content" id="about-content"></div>
+                </div>
+            </section>
+
+            <section id="skills" class="content-section">
+                <h2>&gt; SYSTEM CAPABILITIES</h2>
+                <div class="skills-grid" id="skills-grid"></div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2>&gt; PROJECT DATABASE</h2>
+                <div class="projects-list" id="projects-list"></div>
+            </section>
+
+            <section id="contact" class="content-section">
+                <h2>&gt; ESTABLISH CONNECTION</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label>NAME:</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>EMAIL:</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>MESSAGE:</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">[ TRANSMIT ]</button>
+                </form>
+                <div id="form-response"></div>
+            </section>
+        </main>
+
+        <footer class="terminal-footer">
+            <p>DIMITRON v1.0.1985 | SYSTEM UPTIME: <span id="uptime">00:00:00</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
