@@ -19,7 +19,7 @@ navButtons.forEach(btn => {
         const targetSection = btn.getAttribute('data-section');
         
         navButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        btn.classList.add('active'); 
         
         sections.forEach(section => {
             section.classList.remove('active');
@@ -115,7 +115,7 @@ const projects = [
     {
         title: 'Task Management App',
         description: 'Real-time collaborative task tracker with team features',
-        tech: 'React, Node.js, MongoDB, Socket.io'
+        tech: 'React, Node.js, MongoDB'
     },
     {
         title: 'Portfolio CMS',
@@ -127,6 +127,11 @@ const projects = [
         description: 'Interactive weather forecast application with geolocation',
         tech: 'JavaScript, API Integration, Java'
     }
+    {
+    title: 'IT Management',
+    description: 'Coordination of IT operations, project delivery, and long-term technology planning',
+    tech: 'IT Governance, Agile/Scrum, Vendor Management, Budgeting, Cybersecurity, Cloud Infrastructure'
+}
 ];
 
 const projectsList = document.getElementById('projects-list');
