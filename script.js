@@ -126,12 +126,12 @@ const projects = [
         title: 'Weather Dashboard',
         description: 'Interactive weather forecast application with geolocation',
         tech: 'JavaScript, API Integration, Java'
-    }
+    },
     {
-    title: 'IT Management',
-    description: 'Coordination of IT operations, project delivery, and long-term technology planning',
-    tech: 'IT Governance, Agile/Scrum, Vendor Management, Budgeting, Cybersecurity, Cloud Infrastructure'
-}
+        title: 'IT Management',
+        description: 'Coordination of IT operations, project delivery, and long-term technology planning',
+        tech: 'IT Governance, Agile/Scrum, Vendor Management, Budgeting, Cybersecurity, Cloud Infrastructure'
+    }
 ];
 
 const projectsList = document.getElementById('projects-list');
